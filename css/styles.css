@@ -1,0 +1,144 @@
+
+:root{
+  --primary-text-color:  #2E2F42;
+  --secondary-text-color:   #434455;
+  --dark-text-color: #8f95a5;
+  --primary-button-color:#4D5AE5;
+
+
+  --primary-font-family:"roboto"
+}
+body {
+  color: #2E2F42;
+  font-family: "Roboto" "sans-serif";
+  
+  
+}
+ h1,h2,h3,h4,h5,h6{
+  font-family: roboto,sans;
+}
+h2{
+  
+}
+
+ul{list-style: none;}
+
+.header {
+}
+.header-navigation {
+}
+.header-logo {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.header-mail {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5px;
+  letter-spacing: 0.02em;
+}
+.header-mail:hover{
+    color:#434455; ;
+}
+.header-tel {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5px;
+  letter-spacing: 0.02em;
+
+  color: #434455;
+}
+.header-tel:hover{
+    color:#434455; ;
+}
+.paragraphes{
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+/* or 150% */
+
+letter-spacing: 0.02em;
+
+/* SLATE */
+
+color: #434455;
+}
+
+
+
+.button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #4D5AE5;
+    cursor: pointer;
+    
+    
+}
+.button:hover{
+  background-color: #404BBF ;
+}
+.list {
+}
+.list-element {
+}
+.list-headlines {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+
+}
+
+
+
+.headlines-section {
+  
+ background-color:#2E2F42;
+}
+
+.first-headlines {
+font-weight: 600;
+font-size: 56px;
+line-height: 1.07;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+
+}
+
+.btn {
+font-weight: 600;
+font-size: 16px;
+line-height: 1.18;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+background: #4D5AE5;
+color: #FFFFFF;
+cursor: pointer;
+  
+}
+.footer{
+  background-color: #2E2F42;
+  color: #E7E9FC;
+}
