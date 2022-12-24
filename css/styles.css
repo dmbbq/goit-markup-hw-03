@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: roboto, sans;
+  margin: 0;
 }
 
 .our-work {
@@ -43,19 +43,25 @@ h6 {
 .container{
   margin-left: auto;
   margin-right: auto;
-  width: 1128px;
+  width: 1158px;
 
 }
 .header{
 
 }
 
+.header-navigadion{
+
+  display:flex
+}
 ul {
   list-style: none;
 }
 
 .header-logo {
   font-family: raleway;
+  margin-left: auto;
+  margin-right: auto;
   
 }
 
@@ -105,6 +111,7 @@ ul {
   /* identical to box height, or 120% */
 
   letter-spacing: 0.02em;
+  
 }
 .our-stuff {
   font-weight: 500;
@@ -154,7 +161,7 @@ ul {
 
 .headlines-section {
   background-color: #2e2f42;
-  height: 600px;
+  
   text-align: center;
 }
 
@@ -164,6 +171,7 @@ ul {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  
   
 
   color: #ffffff;
@@ -191,3 +199,4 @@ ul {
   background-color: #2e2f42;
   color: #e7e9fc;
 }
+
