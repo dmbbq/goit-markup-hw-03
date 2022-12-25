@@ -1,6 +1,6 @@
 * {
-  text-decoration: none;
   box-sizing: border-box;
+  list-style: none;
 }
 :root {
   --primary-text-color: #2e2f42;
@@ -8,7 +8,7 @@
   --dark-text-color: #8f95a5;
   --primary-button-color: #4d5ae5;
   --secondary-button-color: #404bbf;
-
+  --white-color: #fff;
   --primary-font-family: "roboto";
 }
 body {
@@ -20,8 +20,37 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
+  margin-top: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap:24px;
+}
+.list-element{
+  width: calc((100%-48px) / 3);
+}
+
+.list {
+  list-style: none;
   margin: 0;
+  padding: 0;
+}
+.header {
+  outline: solid #e7e9fc;
+}
+.name-stuff {
+  text-align: center;
+  padding-top: 32px;
+  padding-right: 65px;
+  padding-bottom: 32px;
+  padding-left: 65px;
 }
 
 .our-work {
@@ -35,34 +64,99 @@ h6 {
   text-transform: capitalize;
 
   /* NAVY BLUE */
-
- 
-  
 }
-
-.container{
+.our-team {
+  display: flex;
+  gap: 24px;
+}
+.header-item {
+}
+.container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 1158px;
-
 }
-.header{
-
+.container-flex {
+  display: flex;
+  align-items: center;
 }
 
-.header-navigadion{
-
-  display:flex
+.header-logo,
+.header-link,
+.header-tel,
+.header-tel {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: inline-block;
 }
-ul {
-  list-style: none;
+
+.header-list {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.logo-studio.logo-studio-footer {
+  color: var(--white-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .header-logo {
+  font-weight: 800;
   font-family: raleway;
   margin-left: auto;
   margin-right: auto;
-  
+  display: flex;
+  margin-right: 76px;
+}
+.header-mail {
+  margin-right: 40px;
+}
+
+.logo-web {
+  font-size: 18px;
+  line-height: 1.33;
+  /* identical to box height, or 133% */
+
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  /* IRIS */
+
+  color: #4d5ae5;
+}
+.logo-studio {
+  font-size: 18px;
+  line-height: 1.33;
+  /* identical to box height, or 133% */
+
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  /* IRIS */
+
+  color: #2e2f42;
 }
 
 .header-link {
@@ -71,17 +165,14 @@ ul {
   line-height: 1.5px;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  /* display: flex; */
-
-   
 }
-.header-link{
-
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
-.header-link:hover{
-  
+
+.header-link:hover {
   color: #404bbf;
-
 }
 .header-mail {
   font-weight: 400;
@@ -111,7 +202,6 @@ ul {
   /* identical to box height, or 120% */
 
   letter-spacing: 0.02em;
-  
 }
 .our-stuff {
   font-weight: 500;
@@ -128,12 +218,14 @@ ul {
   /* or 150% */
 
   letter-spacing: 0.02em;
+  margin-bottom: 0;
 
   /* SLATE */
-
- 
 }
-
+.list-skills {
+  display: flex;
+  gap: 24px;
+}
 .button {
   font-weight: 600;
   font-size: 16px;
@@ -142,15 +234,21 @@ ul {
   text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
-  background: #F4F4FD;
+  background: #f4f4fd;
   cursor: pointer;
   border-radius: 4px;
+  border-color: transparent;
 }
-.button:hover,:focus {
+.button:hover,
+:focus {
   background-color: #404bbf;
   color: #ffffff;
 }
-
+.button-list {
+  justify-content: center;
+  display: flex;
+  gap: 24px;
+}
 .list-headlines {
   font-weight: 600;
   font-size: 20px;
@@ -161,7 +259,7 @@ ul {
 
 .headlines-section {
   background-color: #2e2f42;
-  
+
   text-align: center;
 }
 
@@ -171,13 +269,14 @@ ul {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  
-  
+  margin-bottom: 48px;
 
   color: #ffffff;
-  background-color: tomato;
 }
-
+.card-list {
+  display: flex;
+  gap: 24px;
+}
 .btn {
   font-family: inherit;
   font-weight: 600;
@@ -190,7 +289,10 @@ ul {
   color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
-  
+  margin: 0 auto;
+  padding: 15px 31px;
+  border-color: transparent;
+  padding: 15px 31px;
 }
 .btn:hover {
   background-color: #404bbf;
@@ -199,4 +301,3 @@ ul {
   background-color: #2e2f42;
   color: #e7e9fc;
 }
-
