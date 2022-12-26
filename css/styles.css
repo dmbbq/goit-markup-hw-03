@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  list-style: none;
+  
+  
 }
 :root {
   --primary-text-color: #2e2f42;
@@ -25,16 +26,20 @@ p {
   margin-top: 0;
 }
 
-.link {
+.link{
   text-decoration: none;
 }
-.card-list {
+/* card list portfolio */
+.card-list{
   display: flex;
   flex-wrap: wrap;
-  gap:24px;
+  gap: 24px;
+  flex-basis: calc((100%-48px) / 3);
+  text-decoration: none;
 }
-.list-element{
-  width: calc((100%-48px) / 3);
+.borders {
+  border: 1px solid #e7e9fc;
+  border-top: transparent;
 }
 
 .list {
@@ -69,8 +74,7 @@ p {
   display: flex;
   gap: 24px;
 }
-.header-item {
-}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -225,6 +229,8 @@ p {
 .list-skills {
   display: flex;
   gap: 24px;
+  margin-top: 120px;
+
 }
 .button {
   font-weight: 600;
@@ -238,6 +244,10 @@ p {
   cursor: pointer;
   border-radius: 4px;
   border-color: transparent;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
 }
 .button:hover,
 :focus {
@@ -248,6 +258,7 @@ p {
   justify-content: center;
   display: flex;
   gap: 24px;
+  list-style: none;
 }
 .list-headlines {
   font-weight: 600;
@@ -259,7 +270,7 @@ p {
 
 .headlines-section {
   background-color: #2e2f42;
-
+  
   text-align: center;
 }
 
@@ -273,7 +284,8 @@ p {
 
   color: #ffffff;
 }
-.card-list {
+/* card list index html */
+.card-list-index {
   display: flex;
   gap: 24px;
 }
