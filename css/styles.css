@@ -29,15 +29,24 @@ p {
 .link {
   text-decoration: none;
 }
+.card-list-section
+{
+  margin-bottom: 120px;
+}
 /* card list portfolio */
 .card-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  flex-basis: calc((100% - 48px) / 3);
   text-decoration: none;
 }
 
+.list-element {
+  flex-basis: calc((100% - 48px) / 3);
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .borders {
   border: 1px solid var(--footer-text-color);
   border-top: none;
@@ -59,7 +68,11 @@ p {
   padding-bottom: 32px;
   padding-left: 65px;
 }
-
+.our-team-section {
+  background-color: var(--back-button-color);
+  padding-bottom: 120px;
+  padding-top: 72px;
+}
 .our-work {
   font-weight: 700;
   font-size: 36px;
@@ -71,7 +84,12 @@ p {
   text-transform: capitalize;
 
   /* NAVY BLUE */
+  margin-top: 120px;
+  margin-bottom: 72px;
 }
+
+
+
 .our-team {
   display: flex;
   gap: 24px;
@@ -216,6 +234,8 @@ p {
 
   text-align: center;
   letter-spacing: 0.02em;
+  width: max-content;
+
 }
 .paragraphes {
   font-weight: 400;
@@ -230,6 +250,9 @@ p {
 }
 .paragraphes-portfolio {
   color: var(--secondary-text-color);
+}
+.skills {
+  margin-bottom: 8px;
 }
 .list-skills {
   display: flex;
@@ -263,6 +286,8 @@ p {
   display: flex;
   gap: 24px;
   list-style: none;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 .list-headlines {
   font-weight: 600;
@@ -278,7 +303,6 @@ p {
   text-align: center;
   padding-top: 188px;
   padding-bottom: 180px;
-  
 
 }
 
@@ -286,16 +310,19 @@ p {
   font-weight: 600;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
   color: var(--white-color);
-  
+  max-width: 494px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 /* card list index html */
 .card-list-index {
   display: flex;
   gap: 24px;
+  padding-bottom: 120px;
 }
 .btn {
   font-family: inherit;
@@ -320,4 +347,19 @@ p {
 .footer {
   background-color: var(--primary-text-color);
   color: var(--footer-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-content{
+  
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+/* or 150% */
+
+letter-spacing: 0.02em;
+
+/* CORNFLOWER */
+
+width: 264px;
 }
