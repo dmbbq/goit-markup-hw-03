@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  
-  
 }
 :root {
   --primary-text-color: #2e2f42;
@@ -10,11 +8,13 @@
   --primary-button-color: #4d5ae5;
   --secondary-button-color: #404bbf;
   --white-color: #fff;
-  --primary-font-family: "roboto";
+  --primary-font-family: "Roboto", sans-serif;
+  --footer-text-color: #e7e9fc;
+  --back-button-color: #f4f4fd;
 }
 body {
-  color: #2e2f42;
-  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  font-family: var(--primary-font-family);
 }
 h1,
 h2,
@@ -26,20 +26,21 @@ p {
   margin-top: 0;
 }
 
-.link{
+.link {
   text-decoration: none;
 }
 /* card list portfolio */
-.card-list{
+.card-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  flex-basis: calc((100%-48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
   text-decoration: none;
 }
+
 .borders {
-  border: 1px solid #e7e9fc;
-  border-top: transparent;
+  border: 1px solid var(--footer-text-color);
+  border-top: none;
 }
 
 .list {
@@ -47,8 +48,9 @@ p {
   margin: 0;
   padding: 0;
 }
+
 .header {
-  outline: solid #e7e9fc;
+  border-bottom: solid var(--footer-text-color);
 }
 .name-stuff {
   text-align: center;
@@ -147,7 +149,7 @@ p {
 
   /* IRIS */
 
-  color: #4d5ae5;
+  color: var(--primary-button-color);
 }
 .logo-studio {
   font-size: 18px;
@@ -160,15 +162,15 @@ p {
 
   /* IRIS */
 
-  color: #2e2f42;
+  color: var(--secondary-text-color);
 }
 
 .header-link {
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--primary-text-color);
 }
 .header-navigation {
   display: flex;
@@ -176,28 +178,28 @@ p {
 }
 
 .header-link:hover {
-  color: #404bbf;
+  color: var(--secondary-button-color);
 }
 .header-mail {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--secondary-text-color);
 }
 .header-mail:hover {
-  color: #404bbf;
+  color: var(--secondary-button-color);
 }
 .header-tel {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 
-  color: #434455;
+  color: var(--secondary-text-color);
 }
 .header-tel:hover {
-  color: #404bbf;
+  color: var(--secondary-button-color);
 }
 .our-skills {
   font-weight: 500;
@@ -226,24 +228,26 @@ p {
 
   /* SLATE */
 }
+.paragraphes-portfolio {
+  color: var(--secondary-text-color);
+}
 .list-skills {
   display: flex;
   gap: 24px;
   margin-top: 120px;
-
 }
 .button {
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background: #f4f4fd;
+  color: var(--secondary-button-color);
+  background: var(--back-button-color);
   cursor: pointer;
   border-radius: 4px;
-  border-color: transparent;
+  border: 1px solid var(--footer-text-color);
   padding-top: 12px;
   padding-right: 24px;
   padding-bottom: 12px;
@@ -251,8 +255,8 @@ p {
 }
 .button:hover,
 :focus {
-  background-color: #404bbf;
-  color: #ffffff;
+  background-color: var(--secondary-button-color);
+  color: var(--white-color);
 }
 .button-list {
   justify-content: center;
@@ -265,13 +269,17 @@ p {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--primary-text-color);
 }
 
 .headlines-section {
-  background-color: #2e2f42;
-  
+  background-color: var(--primary-text-color);
+
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 180px;
+  
+
 }
 
 .first-headlines {
@@ -281,8 +289,8 @@ p {
   text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
-
-  color: #ffffff;
+  color: var(--white-color);
+  
 }
 /* card list index html */
 .card-list-index {
@@ -297,8 +305,8 @@ p {
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
-  background: #4d5ae5;
-  color: #ffffff;
+  background: var(--primary-button-color);
+  color: var(--white-color);
   cursor: pointer;
   border-radius: 4px;
   margin: 0 auto;
@@ -307,9 +315,9 @@ p {
   padding: 15px 31px;
 }
 .btn:hover {
-  background-color: #404bbf;
+  background-color: var(--secondary-button-color);
 }
 .footer {
-  background-color: #2e2f42;
-  color: #e7e9fc;
+  background-color: var(--primary-text-color);
+  color: var(--footer-text-color);
 }
