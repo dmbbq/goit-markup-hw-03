@@ -67,6 +67,11 @@ p {
   padding-right: 65px;
   padding-bottom: 32px;
   padding-left: 65px;
+
+ background-color: var(--white-color);
+ white-space: nowrap;
+ 
+ 
 }
 .our-team-section {
   background-color: var(--back-button-color);
@@ -130,7 +135,9 @@ p {
 .logo-studio.logo-studio-footer {
   color: var(--white-color);
 }
-
+img{
+  display: block;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -234,7 +241,6 @@ p {
 
   text-align: center;
   letter-spacing: 0.02em;
-  width: max-content;
 
 }
 .paragraphes {
